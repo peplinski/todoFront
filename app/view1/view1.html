@@ -19,8 +19,9 @@
             <td>{{task.id}}</td>
             <td>{{task.title}}</td>
             <td>{{task.description}}</td>
-            <td>{{task.time}}</td>
-            <td><input type="checkbox">{{task.done}}</td>
+            <td>{{task.addTime}}</td>
+            <td><input type="checkbox" ng-checked="task.done" ng-click="ctrl.done(task.id, !task.done)"></td>
+            <!--<td><input type="checkbox">{{task.done}}</td>-->
         </tr>
         </tbody>
     </table>

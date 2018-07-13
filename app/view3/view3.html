@@ -1,0 +1,19 @@
+<div ng-controller="View3Ctrl as ctrl">
+    {{ctrl.objectToSend}}
+    <div>Formularz dodawania zadania</div>
+    <div>
+        <div class="padding_class">Title:</div>
+        <div>
+            <input type="text" ng-model="ctrl.objectToSend.register_title">
+        </div>
+    </div>
+    <div>
+        <div class="padding_class">Description:</div>
+        <div>
+            <input type="text" ng-model="ctrl.objectToSend.register_description">
+        </div>
+    </div>
+    <div>
+        <input type="button" ng-click="ctrl.stworzNoweZadanie()" value="Dodaj">
+    </div>
+</div>
