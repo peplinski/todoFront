@@ -1,0 +1,29 @@
+<div ng-controller="View2Ctrl as ctrl">
+  {{ctrl.zmienna}}</br>
+  <!--<input type="text" ng-model="ctrl.zmienna"></br>-->
+  <input class="button" type="button" value="Klik" ng-click="ctrl.funkcja()"></br>
+  <!--{{ctrl.dane}}</br>-->
+
+  <table style="width:100%;border: solid;border-width: 1px">
+    <thead>
+    <tr>
+      <th style="width: 60px">id</th>
+      <th style="width: 60px">name</th>
+      <th style="width: 60px">surname</th>
+      <th style="width: 60px">address</th>
+      <th style="width: 60px">email</th>
+      <th style="width: 60px">password</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="user in ctrl.dane">
+      <td>{{user.id}}</td>
+      <td>{{user.name != null ? user.name : 'N/A'}}</td>
+      <td>{{user.surname}}</td>
+      <td>{{user.address != null ? user.address : 'N/A'}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.password}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

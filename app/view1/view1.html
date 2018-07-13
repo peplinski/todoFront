@@ -1,0 +1,27 @@
+<div ng-controller="View1Ctrl as ctrl">
+    {{ctrl.zmienna}}</br>
+    <!--<input type="text" ng-model="ctrl.zmienna"></br>-->
+    <input class="button" type="button" value="Klik" ng-click="ctrl.funkcja()"></br>
+    <!--{{ctrl.dane}}</br>-->
+
+    <table style="width:100%;border: solid;border-width: 1px">
+        <thead>
+        <tr>
+            <th style="width: 60px">id</th>
+            <th style="width: 60px">title</th>
+            <th style="width: 60px">description</th>
+            <th style="width: 60px">Data</th>
+            <th style="width: 60px">Is Done ?</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="task in ctrl.dane">
+            <td>{{task.id}}</td>
+            <td>{{task.title}}</td>
+            <td>{{task.description}}</td>
+            <td>{{task.time}}</td>
+            <td><input type="checkbox">{{task.done}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

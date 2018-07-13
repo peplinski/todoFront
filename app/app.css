@@ -1,0 +1,37 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+.ng-binding{
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
+
+.button{
+  width: 150px;
+  letter-spacing: 1px;
+}
+/*table, td {border: 1px solid black; padding: 4px; border-collapse: collapse}*/
+/*td:empty::before {content: "N/A"}*/
